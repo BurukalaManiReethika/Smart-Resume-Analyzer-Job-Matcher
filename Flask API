@@ -1,0 +1,18 @@
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/analyze', methods=['POST'])
+def analyze():
+    resume_text = request.json['resume']
+    job_desc = request.json['job']
+
+    score = match_score(resume_text, job_desc)
+    skills = extract_skills(resume_text)
+
+    return jsonify({
+        "match_score": score,
+        "skills_found": skills
+    })
+
+app.run(debug=True)
