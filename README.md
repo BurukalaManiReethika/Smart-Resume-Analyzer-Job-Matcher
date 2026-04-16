@@ -103,9 +103,7 @@ This project is licensed under the MIT License.
 ---
 
 ## 👩‍💻 Author
-Your Name  
-LinkedIn: (Add your link)  
-GitHub: (Add your profile)  
+Your Name:BURUKALA MANI REETHIKA
 
 ---
 
